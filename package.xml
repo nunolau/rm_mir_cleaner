@@ -49,12 +49,15 @@
   <!-- Use doc_depend for packages you need only for building documentation: -->
   <!--   <doc_depend>doxygen</doc_depend> -->
   <buildtool_depend>catkin</buildtool_depend>
+
   <build_depend>iris_lama</build_depend>
-  <build_depend>iris_lama_ros/</build_depend>
+  <build_depend>iris_lama_ros</build_depend>
+
   <build_export_depend>iris_lama</build_export_depend>
-  <build_export_depend>iris_lama_ros/</build_export_depend>
+  <build_export_depend>iris_lama_ros</build_export_depend>
+
   <exec_depend>iris_lama</exec_depend>
-  <exec_depend>iris_lama_ros/</exec_depend>
+  <exec_depend>iris_lama_ros</exec_depend>
 
 
   <!-- The export tag contains other, unspecified, tags -->

@@ -9,11 +9,14 @@ set(CMAKE_CXX_STANDARD 14) # use c++14
 ## Find catkin macros and libraries
 ## if COMPONENTS list like find_package(catkin REQUIRED COMPONENTS xyz)
 ## is used, also find other catkin packages
+
+find_package(iris_lama REQUIRED)
+
 find_package(catkin REQUIRED COMPONENTS
 	eigen_conversions
 	roscpp
 	geometry_msgs
-  	iris_lama
+  	iris_lama_ros
 )
 
 ## System dependencies are found with CMake's conventions
@@ -152,6 +155,7 @@ add_executable(rm_cleaner src/rm_cleaner.cpp)
 ## Specify libraries to link a library or executable target against
 target_link_libraries(rm_cleaner
    ${catkin_LIBRARIES}
+   iris_lama::iris_lama
 )
 
 #############
